@@ -1,0 +1,166 @@
+/******************************* Main style for website *********************/
+/****************************************************************************/
+
+
+/*******************************main color ***********************/
+/*************************************************************************/
+
+/*  - background color: #f2f2f2
+    - header: #00123c
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 50px 150px 1fr 50px;
+    grid-gap: 15px;
+    grid-template-areas:  
+    'header header'
+    'title title'
+    'main info'
+    'footer footer';
+}
+
+/************************** Header page *******************************/
+/***********************************************************************/
+
+header{
+    display: grid;
+    background-color: #00123c;
+    height: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;    
+}
+
+.home_page{
+    position: relative;
+    background-color: #f2f2f2;
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+}
+
+.home_page a{
+    text-decoration: none;
+    color: #00123c;
+}
+
+.contact_page{
+    position: relative;
+    /* background-color: #f2f2f2; */
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+}
+
+.contact_page a{
+    text-decoration: none;
+    color: white;
+}
+
+.about_page{
+    position: relative;
+    /* background-color: #f2f2f2; */
+    margin-top: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 10px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    font-weight: bold;
+}
+
+.about_page a{
+    text-decoration: none;
+    color: white;
+}
+.main_logo{
+    /* margin-left: auto; */
+    margin-right: auto;
+    
+
+}
+
+.main_logo img{
+    position: absolute;
+    width: 95px;
+    height: 100px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: 1px solid #0040d4;
+    box-shadow: 2px 2px 15px #00123c
+}
+
+.logo2{
+    display: none;
+}
+
+.contact_page:hover, .about_page:hover{
+    background-color: #0040d4;
+}
+
+/*********************** TITLE WEBSITE*******************/
+/*********************************************************/
+
+.title_main{
+    height: 150px;
+    background-color: white;
+    text-align: center;
+    top: 10px;
+    margin-left: 5%;
+    margin-right: 30%;
+    box-shadow: 0px 4px 10px #00123c;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 150%;
+}
+.title_main h1{
+     height: 150px;
+    line-height: 150px;
+    color: #00123c;
+}
+
+.multi_word{
+    font-family: 'Butcherman', cursive;
+    color: #0040d4;
+}
+
+.online_word{
+    animation: change_color 2s infinite;
+    transition: 2s;
+}
+
+@keyframes change_color {
+    0% {
+        color: #0040d4;
+    }
+    50%{
+        color: #00123c;
+    }
+    100%{
+        color: #0040d4;
+    }
+}
