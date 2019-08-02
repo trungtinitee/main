@@ -19,6 +19,20 @@
     top: 0;
     left: 0;
 }
+
+/************ main ******************/
+
+.choose_items{
+    padding: 15px 15px 50px 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+    'ticket1'
+    'ticket2'
+    'ticket3'
+    'ticket4';
+}
 }
 
 @media only screen and (max-width:480px){
@@ -78,6 +92,21 @@ header{
     left: 0px;
     
 
+}
+
+
+/************* main **********************/
+
+.choose_items{
+    padding: 15px 15px 50px 15px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    'ticket1'
+    'ticket2'
+    'ticket3'
+    'ticket4';
 }
 
 /************* footer ***************/

@@ -24,7 +24,7 @@ body{
     color: black;
     font-size: 100%;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 250px;
     grid-template-rows: auto auto auto auto;
     grid-gap: 5px;
     grid-template-areas:  
@@ -104,7 +104,7 @@ header a.main_page:hover{
     display: inline;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-85%) translateY(-50%);
     box-shadow: 0px 4px 10px #00123c;
     border-radius: 25px;
     font-size: 200%;
@@ -132,6 +132,53 @@ header a.main_page:hover{
     }
 }
 
+/****************************** CODE FOR MAIN *****************/
+/******************************************************************/
+.choose_items{
+    padding: 25px 25px 100px 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas:
+    'ticket1 ticket2'
+    'ticket3 ticket4';
+}
+
+.choose_items a{
+    text-decoration: none;
+    color: black;
+}
+
+.format_ticket{
+    line-height: 150%;
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px 2px #00123c;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.format_ticket h3{
+    color: #0040d4;
+}
+
+.detai_ticket{
+    text-align: justify;
+    margin-top: 5px;
+}
+
+.picture_for_ticket{
+    margin: 50px 0px 0px 25px;
+    max-width: 100px;
+}
+
+/************* css for main*****************************/
+
+.format_ticket:hover{
+    transform: translateY(-5px) translateX(-2px);
+}
 
 
 /************************ CODE FOR FOOTER ***********************/
@@ -142,7 +189,7 @@ footer{
     padding: 10px 25px;
     background-color: #00123c;
     color: white;
-    font-size: 10px;
+    font-size: 70%;
 }
 
 .info{
