@@ -7,6 +7,7 @@
 
 /*  - background color: #f2f2f2
     - header: #00123c
+    - introduce: #ecf5ff
 
 */
 
@@ -66,6 +67,7 @@ header{
 /************** css for header *************/
 
 .link_right a:hover{
+    transition: 0.8s;
     background-color: #033dc2;
 }
 
@@ -178,7 +180,56 @@ header a.main_page:hover{
 
 .format_ticket:hover{
     transform: translateY(-5px) translateX(-2px);
+    transition: 0.8s;
 }
+
+
+/**********************  CODE FOR INTRODUCE *******************/
+/*************************************************************/
+
+.introduce{
+    line-height: 150%;
+    padding: 25px 10px 5px 5px;
+    font-weight: normal;
+}
+.back_introduce{
+    position: relative;
+}
+
+.introduce h3{
+    background-color: #00123c;
+    color: white;
+    text-align: center;
+    padding: 10px 5px;
+    box-shadow: 1px 1px 5px 0px #00123c;
+}
+
+.introduce p{
+    background-color: #ecf5ff;
+    padding: 5px 10px;
+    text-align: justify;
+    margin-top: 3px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top: 2px solid #00123c;
+    border-bottom: 1px solid #033dc2;
+    box-shadow: 1px 1px 5px 0px #00123c;
+    height: 200px;
+    /* position: absolute; */
+}
+
+#intro2, #intro3, #intro4 {
+    display: none;
+}
+
+
+/************** css for introduce ***************/
+
+.introduce div:hover{
+    transition: 1.5s;
+    transform: scale(1.05);
+}
+
 
 
 /************************ CODE FOR FOOTER ***********************/
