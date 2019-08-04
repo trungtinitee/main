@@ -121,3 +121,10 @@ footer{
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
+
+/******************* CODE FOR DATABASE *************************/
+
+.all_create_here{
+    display: none;
+}
