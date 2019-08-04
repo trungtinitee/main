@@ -1,0 +1,123 @@
+/******************************* CODE STYLE FOR DUONG LOI TRAC NGHIEM *********************/
+/****************************************************************************/
+
+
+/*******************************main color ***********************/
+/*************************************************************************/
+
+/*  - background color: #e9ebee
+    - header: #00123c
+    - introduce: #ecf5ff
+
+*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: #e9ebee;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 100%;
+    display: grid;
+    grid-template-columns: auto 250px;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 5px;
+    grid-template-areas:  
+    'header header'
+    'title title'
+    'main info'
+    'footer footer';
+}
+
+/************************** Header page *******************************/
+/***********************************************************************/
+
+/********* link *********/
+
+header{
+    margin-bottom: 50px;
+    background-color: #00123c;
+    padding: 5px 30px 5px 50px;
+}
+
+.link_right{
+    float: right;
+    padding: 15px 0px 15px 15px;
+}
+
+.link_right li{
+    display: inline;
+    list-style: none;
+    
+}
+
+.link_right li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+.header_reponsive{
+    display: none;
+}
+/************** css for header *************/
+
+.link_right a:hover{
+    transition: 0.8s;
+    background-color: #033dc2;
+}
+
+/* header a.main_page{
+    background-color: white;
+    color: #033dc2
+}
+header a.main_page:hover{
+    background-color: white;
+    color: #033dc2
+} */
+
+/************* logo ***************/
+
+.logo{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 25px;
+    border: 3px solid #00123c;
+    box-shadow: 2px 2px 5px 0px #00123c;
+}
+
+/************************ CODE FOR FOOTER ***********************/
+/****************************************************************/
+
+footer{
+    position: relative;
+    padding: 10px 25px;
+    background-color: #00123c;
+    color: white;
+    font-size: 70%;
+}
+
+.info{
+    list-style: none;
+    line-height: 20px;
+}
+
+.feedback{
+    position: absolute;
+    display: inline;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
