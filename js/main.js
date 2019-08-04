@@ -54,9 +54,25 @@ function change_text_for_introduce(){
 }
 
 
-// SCRIPT FOR LOGO HEADER
+// SCRIPT FOR HEADER
+var status_header = false;
+function header_page(){
+    if (status_header == false){
+        document.getElementById("header_page").style.display = "block";
+        document.getElementById("btn_expand").style.top = "160px";
+        status_header = true;
+    }
+    else{
+        document.getElementById("header_page").style.display = "none";
+        document.getElementById("btn_expand").style.top = "20px";
+        status_header = false;
+    }
+    
+    
+
+}
 
 
-
-//when form load
+//CODE WHEN FORM LOAD
 change_text_for_introduce();
+document.getElementById("btn_expand").addEventListener("click",header_page);
