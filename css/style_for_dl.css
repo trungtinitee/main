@@ -30,8 +30,8 @@ body{
     grid-gap: 5px;
     grid-template-areas:  
     'header header'
-    'title title'
-    'main info'
+    'view_result view_result'
+    'format_question buttom_area'
     'footer footer';
 }
 
@@ -40,10 +40,20 @@ body{
 
 /********* link *********/
 
+
 header{
-    margin-bottom: 50px;
+    position: relative;
     background-color: #00123c;
+    
+    height: 58px;
+}
+
+header div{
     padding: 5px 30px 5px 50px;
+    width: 100%;
+    background-color: #00123c;
+    position: fixed;
+    height: 58px;;
 }
 
 .link_right{
@@ -97,6 +107,63 @@ header a.main_page:hover{
     box-shadow: 2px 2px 5px 0px #00123c;
 }
 
+/********************************* CODE FOR VIEW RESULT ***************/
+/*********************************************************************/
+
+.view_result{
+    padding: 60px 0px;
+    /* background-color: #033dc2; */
+    position: relative;
+    color: #00123c;
+}
+
+.background_view {
+    line-height: 180%;
+    background-image: linear-gradient(to right, #ecf5ff, #2761e9);
+    width: 60%;
+    position: fixed;
+    background-color: #00123c;
+    padding: 15px 50px;
+    top: 58px;
+    left: 30%;
+    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    animation: change_color_view 10s infinite;
+}
+
+.background_view h1{
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/*****************8 css for view **************/
+
+@keyframes change_color_view{
+    25%{
+        background-image: linear-gradient(to right, #ecf5ff, #2761e9);
+    }
+
+    50%{
+        background-image: linear-gradient(to left, #ecf5ff, #2761e9);
+    }
+    75%{
+        background-image: linear-gradient(to right, #ecf5ff, #2761e9);
+    }
+    100%{
+        background-image: linear-gradient(to left, #ecf5ff, #2761e9);
+    }
+}
+
+
+
+/***************************CODE FOR TOOL BUTTOM*******************/
+/******************************************************************/
+
+.buttom{
+    
+}
+
 /************************ CODE FOR FOOTER ***********************/
 /****************************************************************/
 
@@ -126,5 +193,5 @@ footer{
 /******************* CODE FOR DATABASE *************************/
 
 .all_create_here{
-    display: none;
+    display: block;
 }
